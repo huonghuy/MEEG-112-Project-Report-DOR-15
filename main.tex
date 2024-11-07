@@ -1,0 +1,115 @@
+\documentclass[12pt,oneside,letterpaper,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[framed, numbered]{matlab-prettifier}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{lscape}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage[english]{nomencl}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{datetime2}
+
+
+% --- set footer and header ---
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\parindent}{2 cm}
+\title{MEEG-112 Drone Final Report} % to reference as \title, dont use \maketitle
+\makeatletter\let\Title\@title\makeatother
+
+\lstset{
+    language=Matlab,
+    style=Matlab-editor,
+    basicstyle=\normalsize\mlttfamily,
+    numbers=left,
+    numberstyle={\scriptsize\color{black}},	% size of the numbers
+    numbersep= 0.5 cm											
+}
+
+\newlist{steps}{enumerate}{1}
+\setlist[steps, 1]{leftmargin = 1.5 cm,label = Step \arabic*:}
+\renewcommand{\headrulewidth}{1 pt}
+\renewcommand{\footrulewidth}{1 pt}
+\renewcommand{\rmdefault}{ptm}
+
+%\lhead{\Title}
+\rhead{\nouppercase{\rightmark}}
+\lhead{\Title}
+\rfoot{\includegraphics[height=1cm]{root/ub-logo-rgb-horizontal.jpg}} % right header logo
+\setlength\headheight{16 pt}
+\setlength{\footskip}{50 pt}
+\lhead{\Title} %rightH title
+\cfoot{\thepage}
+
+% --- End of page settings ---
+
+\begin{document}
+\doublespacing
+\pagenumbering{roman} 
+
+\begin{singlespace}
+    \input{sources/0_frontpage.tex}
+\end{singlespace}
+
+\newpage
+\addcontentsline{toc}{section}{Table of Contents} % We don't need this necessarily, we can take out if we don't want it
+\tableofcontents
+\thispagestyle{fancy} % force page style
+
+\newpage
+\pagenumbering{arabic} 
+\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}} 
+% We can change \pageref{endOfDoc}} back to \...{EndOfText}
+% once we have more things to append to the end
+% TODO: Check below for other notes
+
+\newpage
+\addcontentsline{toc}{section}{Summary}
+\input{sources/1_Summary} 
+
+\newpage
+\section{Project Schedule} \label{ch1}
+\input{sources/2_Schedule} 
+
+\label{EndOfText}
+% put this back in if we use End of Text
+
+%\newpage
+%\pagenumbering{Roman} 
+%\addcontentsline{toc}{section}{List of Figures}
+%\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
+%\listoffigures
+%\thispagestyle{fancy}
+
+%\newpage
+%\addcontentsline{toc}{section}{List of Tables}
+% put this back in if we use End of Text
+%\listoftables
+%\thispagestyle{fancy}
+
+\label{endOfDoc}
+\end{document}

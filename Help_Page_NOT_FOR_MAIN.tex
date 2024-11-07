@@ -1,0 +1,56 @@
+
+any \lipsum is that filler text, it can be taken out and replaced
+
+To input text, make a new line and start typing, formatting can be done after.
+
+To put in any quotes, use:
+    ``(Two back ticks) to start a quote 
+    ''(Two apostrophes) to end a quote
+
+Sample Table
+\begin{table}[H]
+    \centering
+    \caption{Material List as of October 21, 2024}
+    \begin{tabular}{|c|c|c|}
+    \centering
+    \textbf{Lorem} & \textbf{Ipsum} & \textbf{Lorem [\$]} \\ \hline \hline
+1   & lipsum    & lorem     \\ \hline   
+2   & lipsum    & lorem   \\ \hline
+3   & lipsum    & lorem  
+    \end{tabular}
+    \label{tab:table1}
+\end{table}
+
+Insert new chapter to main
+1. Create document in Sources, following naming scheme "#_ChapterTitle"
+2. go to main.tex
+insert following code
+\newpage
+\section{Chapter title} \label{ch#}
+\input{sources/#_ChapterTitle}
+
+Sample Figure
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.2\textwidth ]{root/UB-Seal.eps}
+    \caption{University of Bridgeport Logo \cite{UB_Logo}}
+    \label{fig:UB_Logo}
+\end{figure}
+
+Figures Page
+\newpage
+\pagenumbering{Roman} 
+\addcontentsline{toc}{section}{List of Figures}
+\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
+\listoffigures
+\thispagestyle{fancy}
+
+Bibliography page
+\newpage
+\addcontentsline{toc}{section}{References}
+\bibliography{document.bib} 
+\bibliographystyle{ieeetr}
+
+Appendix Page
+\newpage
+\section{Appendix A} \label{ch6}
