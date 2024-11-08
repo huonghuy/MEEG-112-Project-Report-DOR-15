@@ -31,6 +31,7 @@
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage{datetime2}
+\usepackage{lastpage}
 
 
 % --- set footer and header ---
@@ -75,14 +76,14 @@
     \input{sources/0_frontpage.tex}
 \end{singlespace}
 
-\newpage
-\addcontentsline{toc}{section}{Table of Contents} % We don't need this necessarily, we can take out if we don't want it
-\tableofcontents
-\thispagestyle{fancy} % force page style
+%\newpage
+%\addcontentsline{toc}{section}{Table of Contents} 
+%\tableofcontents
+%\thispagestyle{fancy} % force page style
 
 \newpage
 \pagenumbering{arabic} 
-\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}} 
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}} 
 % We can change \pageref{endOfDoc}} back to \...{EndOfText}
 % once we have more things to append to the end
 % TODO: Check below for other notes
@@ -91,12 +92,9 @@
 \addcontentsline{toc}{section}{Summary}
 \input{sources/1_Summary} 
 
-\newpage
+%\newpage
 \section{Project Schedule} \label{ch1}
 \input{sources/2_Schedule} 
-
-\label{EndOfText}
-% put this back in if we use End of Text
 
 %\newpage
 %\pagenumbering{Roman} 
@@ -110,6 +108,4 @@
 % put this back in if we use End of Text
 %\listoftables
 %\thispagestyle{fancy}
-
-\label{endOfDoc}
 \end{document}
