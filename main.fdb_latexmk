@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1733012418.58279 "/Users/huyhuong/Git-Repos/MEEG-112-Project-Report-DOR-15/main.tex" "main.pdf" "main" 1733012419.36421 0
+["pdflatex"] 1733012470.23921 "/Users/huyhuong/Git-Repos/MEEG-112-Project-Report-DOR-15/main.tex" "main.pdf" "main" 1733012471.01706 0
   "/Users/huyhuong/Git-Repos/MEEG-112-Project-Report-DOR-15/main.tex" 1733009565.91782 2814 fbc29356fb8ba20d6dc12d02ddbcdca9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -136,13 +136,13 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733001680 5476123 0aaf5f0b94d004f6c94b5aad0957af23 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733001796 3343743 eadbfd96759059438c3c8d05d3725483 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1733012419.3065 1385 c6d01052f953e5f9f800dc5c26be6b45 "pdflatex"
-  "main.out" 1733012419.3074 831 2ebf12e09580fbf48b087e9929a7db25 "pdflatex"
+  "main.aux" 1733012470.96084 1385 c6d01052f953e5f9f800dc5c26be6b45 "pdflatex"
+  "main.out" 1733012470.96171 831 2ebf12e09580fbf48b087e9929a7db25 "pdflatex"
   "main.tex" 1733009565.91782 2814 fbc29356fb8ba20d6dc12d02ddbcdca9 ""
   "root/UB-Seal.eps" 1732071740.1876 6288202 daa840f473cdb58b61de2f4dc11c8036 ""
   "root/ub-logo-rgb-horizontal.jpg" 1732071740.1928 1448600 5f6ea41a789574972023cee0decd8c86 ""
-  "sources/0_frontpage.tex" 1732071740.1931 924 ef2b7a0a9e4b5f65d44781f1039682ad ""
-  "sources/2_Schedule.tex" 1733012418.39814 4547 3d4c9c0cf5669d41cb581365d889ad0e ""
+  "sources/0_frontpage.tex" 1733012470.03646 931 e4fb813f93d1cf037a46caf680c30ab1 ""
+  "sources/2_Schedule.tex" 1733012424.79949 4547 3d4c9c0cf5669d41cb581365d889ad0e ""
   (generated)
   "main.aux"
   "main.log"
