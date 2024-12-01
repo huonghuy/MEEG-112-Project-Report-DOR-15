@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.13)  19 NOV 2024 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.30)  30 NOV 2024 19:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **/Users/huyhuong/Git-Repos/MEEG-112-Project-Report-DOR-15/main.tex
 (/Users/huyhuong/Git-Repos/MEEG-112-Project-Report-DOR-15/main.tex
-LaTeX2e <2024-11-01>
+LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
@@ -345,7 +345,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \Gin@req@height=\dimen174
 \Gin@req@width=\dimen175
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
 \f@nch@headwidth=\skip64
 \f@nch@O@elh=\skip65
 \f@nch@O@erh=\skip66
@@ -617,12 +617,12 @@ Package epstopdf Info: Source file: <root/UB-Seal.eps>
 (epstopdf)                    date: 2024-11-19 22:02:20
 (epstopdf)                    size: 6288202 bytes
 (epstopdf)             Output file: <root/UB-Seal-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-11-19 22:02:42
+(epstopdf)                    date: 2024-11-30 19:16:48
 (epstopdf)                    size: 59025 bytes
 (epstopdf)             Command: <repstopdf --outfile=root/UB-Seal-eps-converted-to.pdf root/UB-Seal.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
-<root/UB-Seal-eps-converted-to.pdf, id=28, 2329.70375pt x 2218.2875pt>
+<root/UB-Seal-eps-converted-to.pdf, id=24, 2329.70375pt x 2218.2875pt>
 File: root/UB-Seal-eps-converted-to.pdf Graphic file (type pdf)
 <use root/UB-Seal-eps-converted-to.pdf>
 Package pdftex.def Info: root/UB-Seal-eps-converted-to.pdf  used on input line 6.
@@ -631,18 +631,21 @@ Package pdftex.def Info: root/UB-Seal-eps-converted-to.pdf  used on input line 6
 
 [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./root/UB-Seal-eps-converted-to.pdf>]) (./sources/1_Summary.tex) (./sources/2_Schedule.tex
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./root/UB-Seal-eps-converted-to.pdf>]) (./sources/2_Schedule.tex
 
-<root/ub-logo-rgb-horizontal.jpg, id=41, 4794.3918pt x 1159.6926pt>
+<root/ub-logo-rgb-horizontal.jpg, id=38, 4794.3918pt x 1159.6926pt>
 File: root/ub-logo-rgb-horizontal.jpg Graphic file (type jpg)
 <use root/ub-logo-rgb-horizontal.jpg>
-Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 10.
+Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 32.
 (pdftex.def)             Requested size: 117.56238pt x 28.45274pt.
 [1 <./root/ub-logo-rgb-horizontal.jpg>]
+Overfull \vbox (13.5711pt too high) has occurred while \output is active []
+
+
 
 File: root/ub-logo-rgb-horizontal.jpg Graphic file (type jpg)
 <use root/ub-logo-rgb-horizontal.jpg>
-Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 30.
+Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 32.
 (pdftex.def)             Requested size: 117.56238pt x 28.45274pt.
 [2])
 
@@ -650,35 +653,29 @@ File: root/ub-logo-rgb-horizontal.jpg Graphic file (type jpg)
 <use root/ub-logo-rgb-horizontal.jpg>
 Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 111.
 (pdftex.def)             Requested size: 117.56238pt x 28.45274pt.
-[3]
-
-File: root/ub-logo-rgb-horizontal.jpg Graphic file (type jpg)
-<use root/ub-logo-rgb-horizontal.jpg>
-Package pdftex.def Info: root/ub-logo-rgb-horizontal.jpg  used on input line 111.
-(pdftex.def)             Requested size: 117.56238pt x 28.45274pt.
-[4] 
+[3] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
-LaTeX2e <2024-11-01>
+LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 339833C00BF03D0237CB68DF700EC084;909.
+(rerunfilecheck)             Checksum: 2EBF12E09580FBF48B087E9929A7DB25;831.
  ) 
 Here is how much of TeX's memory you used:
- 20121 strings out of 473362
- 351450 string characters out of 5720983
- 1087682 words of memory out of 5000000
- 42903 multiletter control sequences out of 15000+600000
- 593383 words of font info for 67 fonts, out of 8000000 for 9000
+ 20104 strings out of 473330
+ 351114 string characters out of 5719762
+ 1087681 words of memory out of 5000000
+ 42916 multiletter control sequences out of 15000+600000
+ 590535 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,14n,118p,828b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 1553009 bytes).
+ 110i,14n,118p,832b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (4 pages, 1545938 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
