@@ -76,38 +76,68 @@
     \input{sources/0_frontpage.tex}
 \end{singlespace}
 
-%\newpage
-%\addcontentsline{toc}{section}{Table of Contents} 
-%\tableofcontents
-%\thispagestyle{fancy} % force page style
+\newpage
+\addcontentsline{toc}{section}{Project Summary}
+\input{sources/0.5_Summary} 
+
+\newpage
+\addcontentsline{toc}{section}{Table of Contents} 
+\tableofcontents
+\thispagestyle{fancy} % force page style
 
 \newpage
 \pagenumbering{arabic} 
-\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}}
 % We can change \pageref{endOfDoc}} back to \...{EndOfText}
 % once we have more things to append to the end
 % TODO: Check below for other notes
 
-%\newpage
-%\addcontentsline{toc}{section}{Summary}
-%\input{sources/1_Summary} 
+\newpage
+\section{Introduction} \label{ch1}
+\input{sources/1_Introduction} 
 
-%\newpage
-\section{Project Schedule} \label{ch1}
-\input{sources/2_Schedule} 
+\newpage
+\section{Background Research} \label{ch2}
+\input{sources/2_Background_Research} 
 
-%\newpage
-%\pagenumbering{Roman} 
-%\addcontentsline{toc}{section}{List of Figures}
-%\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
-%\listoffigures
-%\thispagestyle{fancy}
+\newpage
+\section{Concept Design} \label{ch3}
+\input{sources/3_Concept_Design} 
 
-%\newpage
-%\addcontentsline{toc}{section}{List of Tables}
+\newpage
+\section{Project Management} \label{ch4}
+\input{sources/4_Project_Management} 
+
+\newpage
+\section{Conclusion} \label{ch5}
+\input{sources/5_Conclusion}
+
+\newpage
+\section{Acknowledgments} \label{ch7}
+\input{sources/7_Acknowledgements} 
+
+\label{EndOfText}
+
+\newpage
+\nocite{*}
+\pagenumbering{Roman} 
+\addcontentsline{toc}{section}{References}
+\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
+\footnotesize{\bibliographystyle{plain}\bibliography{document}}
+
+\newpage
+\addcontentsline{toc}{section}{Concept Sketches}
+\listoffigures
+\thispagestyle{fancy}
+
+\newpage
+\addcontentsline{toc}{section}{CAD Models and Dimensioned Drawings}
 % put this back in if we use End of Text
-%\listoftables
-%\thispagestyle{fancy}
+\listoftables
+\thispagestyle{fancy}
+
+\label{endOfDoc}
+
 \end{document}
 
 improve my code
