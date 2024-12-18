@@ -1,143 +1,87 @@
 \documentclass[12pt,oneside,letterpaper,english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
-\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
-\usepackage[english]{babel}
-\usepackage{listings}
-\usepackage{color}
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage[framed, numbered]{matlab-prettifier}
-\usepackage{changepage}
-\usepackage{amsmath}
-\usepackage[hidelinks]{hyperref}
-\usepackage{enumitem}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-\usepackage{caption}
-\usepackage{tocloft}
-\usepackage{setspace}
-\usepackage{multirow}
-\usepackage{titling}
-\usepackage{float}
-\usepackage{comment}
-\usepackage{booktabs}
-\usepackage{indentfirst}
-\usepackage{lscape}
-\usepackage{booktabs,caption}
-\usepackage[flushleft]{threeparttable}
-\usepackage[english]{nomencl}
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage{datetime2}
-\usepackage{lastpage}
 
-
-% --- set footer and header ---
-\pagestyle{fancy}
-\fancyhf{}
-
-\setlength{\parindent}{2 cm}
-\title{MEEG-112 Drone Final Report} % to reference as \title, dont use \maketitle
-\makeatletter\let\Title\@title\makeatother
-
-\lstset{
-    language=Matlab,
-    style=Matlab-editor,
-    basicstyle=\normalsize\mlttfamily,
-    numbers=left,
-    numberstyle={\scriptsize\color{black}},	% size of the numbers
-    numbersep= 0.5 cm											
-}
-
-\newlist{steps}{enumerate}{1}
-\setlist[steps, 1]{leftmargin = 1.5 cm,label = Step \arabic*:}
-\renewcommand{\headrulewidth}{1 pt}
-\renewcommand{\footrulewidth}{1 pt}
-\renewcommand{\rmdefault}{ptm}
-
-%\lhead{\Title}
-\rhead{\nouppercase{\rightmark}}
-\lhead{\Title}
-\rfoot{\includegraphics[height=1cm]{root/ub-logo-rgb-horizontal.jpg}} % right header logo
-\setlength\headheight{16 pt}
-\setlength{\footskip}{50 pt}
-\lhead{\Title} %rightH title
-\cfoot{\thepage}
-
-% --- End of page settings ---
+\usepackage{settings}
 
 \begin{document}
-\doublespacing
-\pagenumbering{roman} 
+    \pagenumbering{roman} 
 
-\begin{singlespace}
-    \input{sources/0_frontpage.tex}
-\end{singlespace}
+% --- Front Page ---
+    \begin{singlespace}
+        \input{sources/0_frontpage.tex}
+    \end{singlespace}
 
-\newpage
-\addcontentsline{toc}{section}{Project Summary}
-\input{sources/0.5_Summary} 
-
-\newpage
-\addcontentsline{toc}{section}{Table of Contents} 
-\tableofcontents
-\thispagestyle{fancy} % force page style
-
-\newpage
-\pagenumbering{arabic} 
-\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}}
-% We can change \pageref{endOfDoc}} back to \...{EndOfText}
-% once we have more things to append to the end
-% TODO: Check below for other notes
-
-\newpage
-\section{Introduction} \label{ch1}
-\input{sources/1_Introduction} 
-
-\newpage
-\section{Background Research} \label{ch2}
-\input{sources/2_Background_Research} 
-
-\newpage
-\section{Concept Design} \label{ch3}
-\input{sources/3_Concept_Design} 
-
-\newpage
-\section{Project Management} \label{ch4}
-\input{sources/4_Project_Management} 
-
-\newpage
-\section{Conclusion} \label{ch5}
-\input{sources/5_Conclusion}
-
-\newpage
-\section{Acknowledgments} \label{ch7}
-\input{sources/7_Acknowledgements} 
-
-\label{EndOfText}
-
-\newpage
-\nocite{*}
-\pagenumbering{Roman} 
-\addcontentsline{toc}{section}{References}
-\fancyfoot[C]{Page \thepage\ of \pageref{endOfDoc}}
-\footnotesize{\bibliographystyle{plain}\bibliography{document}}
-
-\newpage
-\addcontentsline{toc}{section}{Concept Sketches}
-\listoffigures
-\thispagestyle{fancy}
-
-\newpage
-\addcontentsline{toc}{section}{CAD Models and Dimensioned Drawings}
-% put this back in if we use End of Text
-\listoftables
-\thispagestyle{fancy}
-
-\label{endOfDoc}
+% --- Table of Contents ---
+    \newpage
+    \addcontentsline{toc}{section}{Project Summary}
+    \input{sources/0.5_Summary} 
+    
+    \newpage
+    \addcontentsline{toc}{section}{Table of Contents} 
+    \tableofcontents
+    \thispagestyle{fancy}
+    
+% --- Main Content ---
+    \newpage
+    \pagenumbering{arabic}
+    
+    \newpage
+    \section{Introduction} \label{ch1}
+    \input{sources/1_Introduction} 
+    
+    \newpage
+    \section{Background Research} \label{ch2}
+    \input{sources/2_Background_Research} 
+    
+    \newpage
+    \section{Concept Design} \label{ch3}
+    \input{sources/3_Concept_Design} 
+    
+    \newpage
+    \section{Project Management} \label{ch4}
+    \input{sources/4_Project_Management} 
+    
+    \newpage
+    \section{Conclusion} \label{ch5}
+    \input{sources/5_Conclusion}
+    
+% --- References ---
+    \newpage
+    \section{References} \label{ch6}
+    \begingroup
+        \renewcommand{\refname}{} % Remove "References" title duplication
+        \setlength{\parskip}{0pt}
+        \setlength{\itemsep}{0pt plus 0.3ex}
+        \vspace{-4em}
+        \nocite{*}
+        \footnotesize{\bibliographystyle{plain}\bibliography{document}}
+        \vspace{-1.5em}
+    \endgroup
+    
+% --- Acknowledgments ---
+    \newpage
+    \section{Acknowledgments} \label{ch7}
+    \input{sources/7_Acknowledgements} 
+    
+    \label{EndOfText}
+    
+% --- Appendices ---
+    \appendix
+    \newpage
+    \pagenumbering{Roman} 
+    \fancyfoot[C]{Page \thepage\ of \pageref{EndOfDoc}}
+    
+    \newpage
+    \section{Concept Sketches}
+    \input{sources/A_Concept_Sketch} 
+    \label{appendix:A}
+    \thispagestyle{fancy}
+    
+    \newpage
+    \section{CAD Models and Dimensioned Drawings}
+    \input{sources/B_Models_&_Drawings} 
+    \label{appendix:B}
+    \thispagestyle{fancy}
+    
+    \label{EndOfDoc}
 
 \end{document}
-
-improve my code

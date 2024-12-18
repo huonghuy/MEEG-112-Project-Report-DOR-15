@@ -1,0 +1,51 @@
+% Encoding and Language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % Modern UTF-8 encoding
+\usepackage[english]{babel}
+
+\usepackage{lipsum}
+\usepackage{comment}
+
+% Page Layout and Spacing
+\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm} % Set paragraph indent
+\usepackage{setspace}
+\doublespacing
+
+% Graphics and Figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{booktabs}
+
+% Headers, Footers, and Page Style
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\setlength{\footskip}{50pt}
+\setlength\headheight{16pt}
+\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}}
+\rhead{\nouppercase{\rightmark}}
+\lhead{MEEG-112 Drone Final Report}
+\rfoot{\includegraphics[height=1cm]{root/ub-logo-rgb-horizontal.jpg}}
+
+% Bibliography
+\usepackage[hidelinks]{hyperref}
+\usepackage{lastpage} % For page count in footers
+
+% Math and Formatting
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+% Miscellaneous
+\usepackage{titlesec} % For controlling section titles
+\usepackage{enumitem} % Customized enumerations
+\usepackage{datetime2} % Date and time utilities
+\usepackage{tocloft} % Table of contents control
+\usepackage{titling} % Title customization
+
+% Appendix Management
+\usepackage[toc,page]{appendix}
